@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FRONTLINE CHRISTIAN ACADEMY</title>
+    <link rel="stylesheet" href="./output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header fixed lg:static z-50 w-full mx-auto bg-white">
+      <div class="container">
+        <div class="header__wrapper py-3">
+          <div
+            class="header__top flex justify-between lg:border-b lg:border-black py-2"
+          >
+            <div class="header__logo">
+              <img class="w-[12.5rem]" src="../img/fca-logo.webp" alt="" />
+            </div>
+            <div class="header__contact hidden lg:block">
+              <ul class="flex flex-row gap-5 pt-6">
+                <li><i class="fa-solid fa-phone"></i>(049) 521-0732</li>
+                <li>
+                  <i class="fa-solid fa-mobile-retro"></i>(+63) 908-202-0749 |
+                  (+63) 926-363-9722
+                </li>
+                <li><a href="" class="btn bg-blue">Facebook</a></li>
+                <li><a href="" class="btn bg-none">FAQ's</a></li>
+              </ul>
+            </div>
+            <div class="toggle__menu lg:hidden cursor-pointer duration-500 active">
+            <span class="w-[40px] bg-black h-1.5 block m-0.5 border"></span>
+            <span class="w-[40px] bg-black h-1.5 block m-0.5 border"></span>
+            <span class="w-[40px] bg-black h-1.5 block m-0.5 border"></span>
+          </div>
+          </div>
+          <div class="header__bottom hidden lg:block">
+            <ul class="header__bottom--nav lg:flex lg:justify-between lg:p-5">
+              <li class="lg:border-r-2 lg:px-[5rem] lg:p-3 lg:pr-[4rem]">
+                HOME
+              </li>
+              <li class="lg:border-r-2 lg:p-3 lg:pr-[5rem]">ABOUT</li>
+              <li class="lg:border-r-2 lg:p-3 lg:pr-[5rem]">ADMISSION</li>
+              <li class="lg:border-r-2 lg:p-3 lg:pr-[5rem]">SERVICES</li>
+              <li class="lg:border-r-2 lg:p-3 lg:pr-[5rem]">GALLERY</li>
+              <li class="lg:border-r-2 lg:p-3 lg:pr-[5rem]">CONTACT</li>
+              <li
+                class="lg:p-3 lg:pr-5 bg-secondary text-white w-[7rem] text-center rounded-xl"
+              >
+                GIVE
+              </li>
+            </ul>
+          </div>
+          
+        </div>
+        <nav class="absolute top-[114px] z-10 bg-white h-screen lg:h-auto -right-[100%] lg:right-0
+        w-full lg:block lg:static ease-in-out duration-500 transition-all">
+          <div class="header__bottom lg:hidden">
+            <ul class="header__bottom--nav lg:flex lg:justify-between lg:p-5">
+              <li class="lg:border-r-2 lg:px-[5rem] lg:p-3 lg:pr-[4rem]">
+                HOME
+              </li>
+              <li class="lg:border-r-2 lg:p-3 lg:pr-[5rem]">ABOUT</li>
+              <li class="lg:border-r-2 lg:p-3 lg:pr-[5rem]">ADMISSION</li>
+              <li class="lg:border-r-2 lg:p-3 lg:pr-[5rem]">SERVICES</li>
+              <li class="lg:border-r-2 lg:p-3 lg:pr-[5rem]">GALLERY</li>
+              <li class="lg:border-r-2 lg:p-3 lg:pr-[5rem]">CONTACT</li>
+              <li
+                class="lg:p-3 lg:pr-5 bg-secondary text-white w-[7rem] text-center rounded-xl"
+              >
+                GIVE
+              </li>
+            </ul>
+          </div>
+            <div class="header__contact lg:hidden">
+              <ul class="flex flex-row gap-5 pt-6">
+                <li><i class="fa-solid fa-phone"></i>(049) 521-0732</li>
+                <li>
+                  <i class="fa-solid fa-mobile-retro"></i>(+63) 908-202-0749 |
+                  (+63) 926-363-9722
+                </li>
+                <li><a href="" class="btn bg-blue">Facebook</a></li>
+                <li><a href="" class="btn bg-none">FAQ's</a></li>
+              </ul>
+            </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- BANNER -->
+    <section class="banner">
+      <div class="container">
+        <div
+          class="banner__title text-center items-center justify-center p-20 lg:text-center lg:justify-center lg:items-center lg:p-20 lg:ml-[15rem]"
+        >
+          <h1
+            class="text-4xl font-raleway w-[20rem] font-extralight lg:text-7xl lg:w-[60rem] lg:font-extralight lg:w-0"
+          >
+            Frequently Asked Questions
+          </h1>
+        </div>
+        <div class="tabs flex flex-col lg:grid lg:grid-cols-[1fr_2fr] pb-20">
+          <ul
+            class="banner__tab items-center justify-center text-center py-10 lg:text-start lg:text-2xl font-light"
+          >
+            <li class="nav cursor-pointer mb-3 active lg:w-[13rem]" id="tabs-1">
+              <a>About Our School</a>
+            </li>
+            <li class="nav cursor-pointer mb-3 lg:w-[23rem]" id="tabs-2">
+              <a>Excellent Learning and Facilities</a>
+            </li>
+            <li class="nav cursor-pointer lg:w-[12rem]" id="tabs-3">
+              <a>job Opportunities</a>
+            </li>
+          </ul>
+
+          <div class="banner__content">
+            <div class="school active" id="tabs-1-content">
+              <h3 class="font-bold text-2xl py-10">About our school</h3>
+              <div class="banner__item">
+                <h4>
+                  <span class="flex gap-5">
+                    <small class="text-primary hidden text-xl lg:block"
+                      >Q:</small
+                    >
+                    What makes you different?
+                  </span>
+                  <i class="fa-solid fa-chevron-up"></i>
+                </h4>
+                <p>
+                  One of our key focus areas is Social Emotional Learning (in
+                  partnership with a US Youth Leadership organization: “Growing
+                  Leaders”), mentoring, and leadership development. We believe
+                  this is something that our young people need, especially in
+                  such challenging and unprecedented global times. We also
+                  prioritize the holistic development and wellbeing of our
+                  students, their families, and our staff and faculty, providing
+                  periodic group counseling sessions for parents and students
+                  with a PRC-registered Guidance Counselor. We provide genuinely
+                  caring support for families, and host monthly Parenting Peer
+                  Groups (PPGs), which are gatherings (online/virtual if
+                  in-person is not possible) of small groups of parents to
+                  provide moral support and academic support to one another. FCA
+                  accepts students from diverse backgrounds, religions, and
+                  walks of life. Our primary language used for teaching and
+                  communication is the English language, except for the subjects
+                  of Filipino, Araling Panlipunan, and certain topics under Home
+                  Economics and Livelihood Education/Technology and Livelihood
+                  Education.
+                </p>
+              </div>
+              <div class="banner__item">
+                <h4>
+                  <span class="flex gap-5">
+                    <small class="text-primary hidden text-xl lg:block"
+                      >Q:</small
+                    >
+                    What are your Core Values?
+                  </span>
+                  <i class="fa-solid fa-chevron-up"></i>
+                </h4>
+                <ul>
+                  <li class="flex items-start">
+                    <i class="fa-solid fa-circle text-primary"></i>
+                    Christ-centeredness: We regard the Bible as the highest
+                    authority on morality and spirituality. Our curriculum is
+                    Bible-based and our desire is that all who enter the doors
+                    of FCA will be impacted to become more Christ-like.
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fa-solid fa-circle text-primary"></i>
+                    Genuine Care and Love for People: The Scriptures command us
+                    to "...love the Lord your God with all your heart, and with
+                    all your soul, and with all your mind," and to “love your
+                    neighbor as yourself.” We genuinely love and care for each
+                    other, our students, and their families, our donors,
+                    partners, and all stakeholders… and desire for them to walk
+                    in the fullness of the promise of abundant life. This desire
+                    drives us to pursue exceptional customer service and high
+                    client satisfaction. We also genuinely love and care for our
+                    employees. We aim to be a fun and meaningful place to work,
+                    and to provide a conducive environment that encourages
+                    collaboration of all stakeholders.
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fa-solid fa-circle text-primary"></i>
+                    Academic excellence - We desire to produce learners who are
+                    academically competent, able to be globally competitive, and
+                    who are critical, strategic thinkers.
+                  </li>
+                  <li class="flex">
+                    <i class="fa-solid fa-circle text-primary"></i>
+                    Leadership with Integrity - We desire to be a school that
+                    influences its people to become leaders of integrity
+                    individuals who are honest, consistent, trustworthy, and
+                    governed by a moral compass.
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fa-solid fa-circle text-primary"></i>
+                    Real-life skills - We believe in preparing our students for
+                    life after formal schooling, and inculcating in them a
+                    strong work ethic, a passion for excellence, and real-life
+                    skills such as communication and critical thinking, as well
+                    as practical knowledge for daily life.
+                  </li>
+                </ul>
+              </div>
+              <div class="banner__item">
+                <h4>
+                  <span class="flex gap-5">
+                    <small class="text-primary hidden text-xl lg:block"
+                      >Q:</small
+                    >
+                    What are the fees?
+                  </span>
+                  <i class="fa-solid fa-chevron-up"></i>
+                </h4>
+                <ul>
+                  <li class="flex items-start">
+                    <i class="fa-solid fa-circle text-primary"></i>
+                    Tuition Fees for Pre-Elementary range from ₱54,000-₱55,000
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fa-solid fa-circle text-primary"></i>Tuition Fees
+                    for Elementary range from ₱57,000-₱58,000
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fa-solid fa-circle text-primary"></i>Tuition Fees
+                    for Junior Highschool range from ₱57,000-₱59,000
+                  </li>
+                  <li>
+                    Payment schemes are flexible - installment plans are
+                    available.
+                  </li>
+                  <li>
+                    You can contact our finance office for special arrangements
+                    or plans.
+                  </li>
+                  <li>
+                    We accommodate online payments, bank transfers, gcash, and
+                    credit/debit cards via online payment links.
+                  </li>
+                </ul>
+              </div>
+              <div class="banner__item">
+                <h4>
+                  <span class="flex gap-5">
+                    <small class="text-primary hidden text-xl lg:block"
+                      >Q:</small
+                    >
+                    Do you have any promotions or discounts?
+                  </span>
+                  <i class="fa-solid fa-chevron-up"></i>
+                </h4>
+                <p class="flex items-start">
+                  <i class="fa-solid fa-circle text-primary"></i> Yes, we do.
+                  Click here
+                </p>
+              </div>
+              <div class="banner__item">
+                <h4>
+                  <span class="flex gap-5">
+                    <small class="text-primary hidden text-xl lg:block"
+                      >Q:</small
+                    >
+                    When do classes start for SY 2024-2025?
+                  </span>
+                  <i class="fa-solid fa-chevron-up"></i>
+                </h4>
+                <p class="flex items-start">
+                  <i class="fa-solid fa-circle text-primary text-xs"></i> Y The
+                  tentative date is August 12, 2024.
+                </p>
+              </div>
+            </div>
+
+            <div class="school" id="tabs-2-content">
+              <h3 class="font-bold text-2xl py-10">
+                Excellent Learning and Facilities
+              </h3>
+              <div class="banner__item">
+                <h4>
+                  <span class="flex gap-5">
+                    <small class="text-primary hidden text-xl lg:block"
+                      >Q:</small
+                    >
+                    What curriculum, books, and learning platform do you use?
+                  </span>
+                  <i class="fa-solid fa-chevron-up"></i>
+                </h4>
+                <p>
+                  FCA follows the K-12 Curriculum of the Department of
+                  Education, and integrates its core values. Many of our books
+                  are shipped from the USA, and modules are also printed by the
+                  school. FCA does its best to not overload its students; the
+                  amount of work assigned is very doable, as long as the student
+                  can focus during class times and is given support by his/her
+                  family. For assigning online tasks, FCA uses Google Classroom,
+                  and the Google Suite for Education. Click here for a quick
+                  introduction and tutorial.
+                </p>
+              </div>
+              <div class="banner__item">
+                <h4>
+                  <span class="flex gap-5">
+                    <small class="text-primary hidden text-xl lg:block"
+                      >Q:</small
+                    >
+                    How do you keep classes interesting and meaningful?
+                  </span>
+                  <i class="fa-solid fa-chevron-up"></i>
+                </h4>
+                <p>
+                  We acknowledge that most of today's students are visual
+                  learners. We make use of fun videos, colorful slides, and
+                  other interesting resources and do our best to keep students
+                  engaged. Our teachers are skilled, and attend regular training
+                  and seminars to keep their teaching strategies relevant and
+                  effective. Check out our website to see photos.
+                </p>
+              </div>
+              <div class="banner__item">
+                <h4>
+                  <span class="flex gap-5">
+                    <small class="text-primary hidden text-xl lg:block"
+                      >Q:</small
+                    >
+                    Do new students need to take any entrance exams?
+                  </span>
+                  <i class="fa-solid fa-chevron-up"></i>
+                </h4>
+                <ul>
+                  <li class="flex items-start">
+                    <i class="fa-solid fa-circle text-primary"></i>Yes, and the
+                    exams depend on the student's grade level. For
+                    Pre-Elementary levels, and Grades 1, 2, and 3, a basic
+                    reading and numeracy assessment is done by the Department
+                    supervisor. For Grades 4-10, there are the following:
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fa-regular fa-circle"></i>Logic Exam (Can be sent
+                    and accomplished online)
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fa-regular fa-circle"></i>Basic Language and Math
+                    Skills (scheduled in-person or via 1-on-1 video call)
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fa-regular fa-circle"></i>Grit Scale (Can be sent
+                    and accomplished online. Grades 6-10 only)
+                  </li>
+                </ul>
+              </div>
+              <div class="banner__item">
+                <h4>
+                  <span class="flex gap-5">
+                    <small class="text-primary hidden text-xl lg:block"
+                      >Q:</small
+                    >
+                    What learning modalities do you offer?
+                  </span>
+                  <i class="fa-solid fa-chevron-up"></i>
+                </h4>
+                <ul>
+                  <li class="flex items-start">
+                    <i class="fa-solid fa-circle text-primary"></i> FCA offers
+                    Face-to-Face Classes, and is applying for a Homeschooling
+                    Program under DepEd.
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fa-regular fa-circle"></i>Face-to-Face Classes for
+                    levels K-12 will be 3-4 days per week until October 21,
+                    2022. Starting November 2022, mentioned levels will
+                    transition to 5-day in-person classes, in observance of
+                    DepEd Order No. 34, s. 2022.
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fa-regular fa-circle"></i>Homeschooling Program:
+                    Still under application.
+                  </li>
+                </ul>
+              </div>
+              <div class="banner__item">
+                <h4>
+                  <span class="flex gap-5">
+                    <small class="text-primary hidden text-xl lg:block"
+                      >Q:</small
+                    >Do you accept students with special needs?
+                  </span>
+                  <i class="fa-solid fa-chevron-up"></i>
+                </h4>
+                <p class="flex items-start">
+                  <i class="fa-solid fa-circle text-primary"></i> Yes, if the
+                  parent/guardian can provide a certificate, letter, or
+                  recommendation from the child’s behavioral psychologist that
+                  the student is recommended for attendance to a regular school.
+                </p>
+              </div>
+              <div class="banner__item">
+                <h4>
+                  <span class="flex gap-5">
+                    <small class="text-primary hidden text-xl lg:block"
+                      >Q:</small
+                    >
+                    Do the students have to wear uniforms?
+                  </span>
+                  <i class="fa-solid fa-chevron-up"></i>
+                </h4>
+                <p class="flex items-start">
+                  <i class="fa-solid fa-circle text-primary"></i>Yes, they will
+                  have to wear their uniforms.
+                </p>
+              </div>
+              <div class="banner__item">
+                <h4>
+                  <span class="flex gap-5">
+                    <small class="text-primary hidden text-xl lg:block"
+                      >Q:</small
+                    >
+                    What do I need to do as a parent to prepare for this school
+                    year?
+                  </span>
+                  <i class="fa-solid fa-chevron-up"></i>
+                </h4>
+                <p class="flex items-start">
+                  <i class="fa-regular fa-circle"></i> Click HERE to view the
+                  needed school supplies per level.
+                </p>
+              </div>
+              <div class="banner__item">
+                <h4>
+                  <span class="flex gap-5">
+                    <small class="text-primary hidden text-xl lg:block"
+                      >Q:</small
+                    >
+                    Do you offer tutorials?
+                  </span>
+                  <i class="fa-solid fa-chevron-up"></i>
+                </h4>
+                <p class="flex items-start">
+                  <i class="fa-regular fa-circle"></i> Yes, we do. Our academic
+                  head aligns students with available tutors. Tutorial rate is
+                  P150.00 per hour.
+                </p>
+              </div>
+              <div class="banner__item">
+                <h4>
+                  <span class="flex gap-5">
+                    <small class="text-primary hidden text-xl lg:block"
+                      >Q:</small
+                    >
+                    Do you offer transportation services?
+                  </span>
+                  <i class="fa-solid fa-chevron-up"></i>
+                </h4>
+                <p class="flex items-start">
+                  <i class="fa-regular fa-circle"></i>Yes. We have
+                  transportation services , and rates depend on the pick-up and
+                  drop-off locations. Click here for current SY rates.
+                </p>
+                <p>
+                  For any further questions, please contact us at the provided
+                  numbers or email address.
+                </p>
+              </div>
+            </div>
+
+            <div class="school" id="tabs-3-content">
+              <h3 class="font-bold text-2xl py-10">Job Opportunities</h3>
+              <div class="banner__item">
+                <h4>
+                  <span class="flex gap-5">
+                    <small class="text-primary hidden text-xl lg:block"
+                      >Q:</small
+                    >
+                    How to apply?
+                  </span>
+                  <i class="fa-solid fa-chevron-up"></i>
+                </h4>
+                <p>View PDF file</p>
+              </div>
+              <div class="banner__item">
+                <h4>
+                  <span class="flex gap-5">
+                    <small class="text-primary hidden text-xl lg:block"
+                      >Q:</small
+                    >
+                    Volunteer Opportunities?
+                  </span>
+                  <i class="fa-solid fa-chevron-up"></i>
+                </h4>
+                <p>
+                  Please send your CV to hrad@fca.edu.ph. We will review, and
+                  contact you as soon as possible. You may still send your CV
+                  even if there are no current job openings. Thank you!"
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer bg-slate-100">
+      <div class="container">
+        <div
+          class="footer__wrapper flex flex-col lg:flex-row border-b-2 border-gray-700 pb-5 items-center lg:justify-between"
+        >
+          <div class="image">
+            <img class="w-[13rem]" src="../img/fca-logo.webp" alt="" />
+          </div>
+          <div class="lg:flex gap-10 hidden lg:block pt-5">
+            <ul>
+              <li class="font-bold">Admission</li>
+              <li>PLayschool</li>
+              <li>Pre-Elementary</li>
+              <li>Elementary</li>
+              <li>Junior High</li>
+            </ul>
+            <ul>
+              <li class="font-bold">Other Offers</li>
+              <li>Tuturial Services</li>
+              <li>Arts</li>
+              <li>Music Lessons</li>
+              <li>Sports</li>
+              <li>transportation</li>
+            </ul>
+            <ul>
+              <li class="font-bold">Quicklinks</li>
+              <li>Home</li>
+              <li>About</li>
+              <li>Admission</li>
+              <li>Services</li>
+              <li>gallery</li>
+              <li>Contact</li>
+            </ul>
+          </div>
+          <div class="flex flex-col gap-2">
+            <a href="" class="btn bg-primaryy w-[12rem] text-center">Give</a>
+            <a href="" class="btn bg-yellow w-[12rem] text-center">FAQ's</a>
+          </div>
+        </div>
+        <div
+          class="bottom flex lg:flex-row lg:justify-between lg:p-5 items-center flex-col-reverse pt-5"
+        >
+          <p>© Frontline Christian Academy 2023</p>
+          <p>Follow us: <i class="fa-brands fa-facebook text-blue-500"></i></p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- SCRIPT -->
+    <script src="./js/dropdown.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/toggleMenu.js"></script>
+  </body>
+</html>

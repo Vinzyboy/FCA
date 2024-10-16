@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-raleway;
+  }
+  .container {
+    @apply max-w-[1600px] w-full px-4 mx-auto;
+  }
+}
+
+@layer components {
+  /* TOGGLE MENU */
+  .toggle__menu.open span {
+    @apply transition-all ease-in;
+  }
+    .toggle__menu.open span:first-child {
+    @apply  rotate-180 w-6;
+  }
+     .toggle__menu.open span:nth-child(2) {
+    @apply  rotate-180;
+  }
+     .toggle__menu.open span:last-child {
+    @apply  rotate-180 w-6;
+  }
+  .header__contact{
+    @apply block bg-white ;
+    
+  }
+
+  /* BANNER */
+  .banner__item {
+    @apply mb-5;
+  }
+  .banner__item h4,
+  .banner__item i {
+    @apply bg-slate-100 px-3 py-2 transition-all flex justify-between items-center cursor-pointer;
+  }
+  .banner__item h4 {
+    @apply text-left text-2xl;
+  }
+  .banner__item i.open {
+    @apply rotate-[900deg] transition-all;
+  }
+  .banner__item p {
+    @apply bg-slate-100 max-h-0 overflow-hidden transition-all text-justify delay-100 mb-5 leading-loose;
+  }
+  .banner__item p.open {
+    @apply max-h-[50rem] bg-slate-100 p-3 transition-all text-justify delay-100;
+  }
+  .banner__item ul {
+    @apply bg-slate-100 max-h-0 overflow-hidden transition-all text-justify delay-100 mb-5 leading-loose;
+  }
+  .banner__item ul.open {
+    @apply bg-slate-100 max-h-[50rem]  transition-all text-justify delay-100;
+  }
+
+  .school {
+    @apply hidden lg:hidden;
+  }
+  .school.active {
+    @apply block lg:block;
+  }
+  .banner__tab li:first-child.active {
+    @apply text-primary border-b-2 border-primary;
+  }
+  .banner__tab li:nth-child(2).active {
+    @apply text-primary border-b-2 border-primary;
+  }
+  .banner__tab li:last-child.active {
+    @apply text-primary border-b-2 border-primary;
+  }
+
+  /* BUTTON */
+  .btn {
+    @apply py-3 px-4 bg-transparent border-black rounded-lg;
+  }
+  .btn.bg-yellow {
+    @apply bg-transparent border border-primary text-black hover:bg-secondary hover:text-white;
+  }
+  .btn.bg-primaryy {
+    @apply bg-primary border-primary text-white hover:bg-secondary;
+  }
+  .btn.bg-blue {
+    @apply bg-blue-800 text-white hover:bg-blue-500;
+  }
+  .btn.bg-none {
+    @apply bg-transparent border border-black hover:bg-green-700 hover:text-white;
+  }
+}
